@@ -11,27 +11,13 @@
 			<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Nerds">
 		</a>
 		<ul class="site-navigation">
-			<li><a href="#">
-				Студия</a>
-			</li>
-			<li><a href="#">
-				Клиенты
-				</a>
-		    </li>
-		    <li>
-		    	<a href="catalog.html">
-		    	Магазин
-		    </a>
-		    </li>
-		    <li><a href="#">
-		    	Контакты
-		    </a>
-		    </li>
+			<li><a href="#">студия</a></li>
+			<li><a href="#">клиенты</a></li>
+		  <li><a href="catalog.html">магазин</a></li>
+		  <li><a href="#">контакты</a></li>
 		</ul>
 		<ul class="user-navigation">
-			<li class="basket-link">
-				Корзина
-			</li>
+			<li class="basket-link">корзина</li>
 		</ul>
    </nav>
 </header>
@@ -42,31 +28,31 @@
    	    <ul class="specialization-list">
    	    	<li class="specialization-item">
             <img src="img/illustration-1.png"  alt="Сайт">
-   	    		<h3>Веб-сайты</h3>
+   	    		<h3>веб-сайты</h3>
    	    		<p>
    	    			Мир никогда не будет прежним после того как увидит ваш сайт!
    	    		</p>
-   	    		<a href="#" class="to-order">Заказать</a>
+   	    		<a href="#" class="to-order">заказать</a>
    	    	</li>
    	    	<li class="specialization-item">
             <img src="img/illustration-2.png"  alt="Приложение">
-   	    		<h3>Приложения</h3>
+   	    		<h3>приложения</h3>
    	    		<P>
    	    			Покорите топ-10 приложений в AppStore и Google Play
    	    		</P>
-   	    		<a href="#" class="to-order">Заказать</a>
+   	    		<a href="#" class="to-order">заказать</a>
    	    	</li>
    	    	<li class="specialization-item">
             <img src="img/illustration-3.png"  alt="Презентация">
-   	    		<h3>Презентации</h3>
+   	    		<h3>презентации</h3>
    	    		<P>
    	    			Вы даже не подозреваете, насколько мы изумительны!
    	    		</P>
-   	    		<a href="#" class="to-order">Заказать</a>
+   	    		<a href="#" class="to-order">заказать</a>
    	    	</li>
    	    </ul>
    	</section>
-   </main>
+   </main>  
    	<footer class="main-footer"> 
    		<div class="footer-social">
         <ul>
@@ -81,6 +67,27 @@
    			Скидка 10% для друзей из социальных сетей.
    		</p>
    	</footer>
-   
+<div class="feedback">
+  <form action="/feedback" method="post">
+    <fieldset>
+      <legend>
+        Напишите нам
+      </legend>
+      <p class="user-name">
+       <label for="user-name">Ваше имя:</label>
+        <input type="text" id="user-name" name="user-name" value="" placeholder="Имя Фамилия" required>
+      </p>
+      <p class="user-email">
+        <label for="user-email">Ваш e-mail:</label>
+        <input type="email" id="user-email" name="email" placeholder="email@example.com" required>
+      </p>
+      <p class="letter">
+        <label for="letter">Текст письма:</label>
+        <textarea id="letter" name="text-of-letter" placeholder="В свободной форме" required></textarea>
+      </p>
+      <button type="submit" class="button">Отправить</button>
+   </fieldset>
+  </form>
+</div>
   </body>
 </html>
