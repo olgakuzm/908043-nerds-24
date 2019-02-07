@@ -16,10 +16,10 @@
       <li><a href="catalog.html">магазин</a></li>
       <li><a href="#">контакты</a></li>
     </ul>
-    <ul class="user-navigation">
-      <li class="basket-link">
-        корзина</li>
-    </ul>
+    <div class="user-navigation">
+      <a href="#">
+        корзина</a>
+    </div>
    </nav>
 </header>
 <main class="container">
@@ -150,18 +150,18 @@
       <legend>
         Напишите нам
       </legend>
-      <p class="user-name">
-       <label for="user-name">Ваше имя:</label>
-       <input type="text" id="user-name" name="user-name" value="" placeholder="Имя Фамилия" required>
-      </p>
-      <p class="user-email">
-        <label for="user-email">Ваш e-mail:</label>
-        <input type="email" id="user-email" name="email" placeholder="email@example.com" required>
-      </p>
-      <p class="letter">
+      <div class="user-name">
+       <label for="dulname">Ваше имя:</label>
+       <input type="text" id="fullname" name="user-name" value="" placeholder="Имя Фамилия" required>
+      </div>
+      <div class="user-email">
+        <label for="email">Ваш e-mail:</label>
+        <input type="email" id="email" name="email" placeholder="email@example.com" required>
+      </div>
+      <div class="user-letter">
         <label for="letter">Текст письма:</label>
         <textarea id="letter" name="text-of-letter" placeholder="В свободной форме" required></textarea>
-      </p>
+      </div>
       <button type="submit" class="button">Отправить</button>
    </fieldset>
 </form>
