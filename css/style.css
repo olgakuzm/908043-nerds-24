@@ -178,7 +178,7 @@ li.current a
 }
 .catalog-item:hover .description
 {
-	display: inline;
+	display: block;
 }
 .catalog-item a::before
 {
