@@ -185,7 +185,7 @@ li.current a
 }
 .catalog-item a::before
 {
-	background-image: url("img/browser.svg") no-repeat;
+	background: url("img/browser.svg") no-repeat;
 	opacity:0.12;
 }
 .catalog-item a:hover::before
