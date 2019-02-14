@@ -1,25 +1,25 @@
 body
 {
-    margin: 0;
-    font-family: "Roboto", Arial, sans-serif;
-    color: black;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: normal;
-    text-align:left;
-    background-color: #ffffff;
+	margin: 0;
+	font-family: "Roboto", Arial, sans-serif;
+	color: black;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: normal;
+	text-align:left;
+	background-color: #ffffff;
 }
 a 
 {
-    text-decoration: none;
+	text-decoration: none;
 }
 .main-navigation
 {
 	font-size: 16px;
 	line-height:30px;
 	color:black;
-    text-transform: uppercase;
-	background-color: grey;
+	text-transform: uppercase;
+	background-color: #eeeeee;
 }
 .site-navigation ,
 .user-navigation,
@@ -32,11 +32,11 @@ a
 .site-navigation a,
 .user-navigation a
 {
-    color: black;
+	color: black;
 }
 .main-navigation img:hover
 {
-    opacity: 0.8;
+	opacity: 0.8;
 }
 .main-navigation img:focus
 {
@@ -55,77 +55,77 @@ a
 li.current a
 {
 	width: 83px;
-    height: 2px;
-    border-bottom: 2px solid #fb565a;
+	height: 2px;
+	border-bottom: 2px solid #fb565a;
 }
 .specialization-list {
-    list-style: none;
+	list-style: none;
 }
 .specialization-list .to-order{
-    font-size:16px;
-    line-height: 18px ;
-    text-align:center;
-    vertical-align: middle;
-    text-transform: uppercase;
-    color: white;
+	font-size:16px;
+	line-height: 18px ;
+	text-align:center;
+	vertical-align: middle;
+	text-transform: uppercase;
+	color: white;
 }
 .specialization-list .to-order-site
 {
-    background-color:#fb565a;
+	background-color:#fb565a;
 }
 .specialization-list .to-order-site:hover
 {
-    background-color:#e74246;
+	background-color:#e74246;
 }
 .specialization-list .to-order-site:focus
 {
-    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-    background-color: #d7373b;
+	box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+	background-color: #d7373b;
 
 }
 .specialization-list .to-order-app
 {
-    background-color:#00ca74;
+	background-color:#00ca74;
 }
 .specialization-list .to-order-app:hover
 {
-    background-color:#00bc6c;
+	background-color:#00bc6c;
 }
 .specialization-list .to-order-app:focus
 {
-    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-    background-color: #00aa62;
+	box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+	background-color: #00aa62;
 
 }
 .specialization-list .to-order-presentation
 {
-    background-color: #efc84a;
+	background-color: #efc84a;
 }
 .specialization-list .to-order-presentation:hover
 {
-    background-color: #eab534;
+	background-color: #eab534;
 }
 .specialization-list .to-order-presentation:focus
 {
-    box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-    background-color: #e5a722;
+	box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+	background-color: #e5a722;
 }
 .specialization-item {
-    text-align: left;
-    
-    color:#283136;
+	text-align: left;
+
+	color:#283136;
 }
 .specialization-item p:first-letter
 {
-    text-transform: capitalize;
+	text-transform: capitalize;
 }
 
 .specialization-item h3 {
-    font-size: 24px;
-    line-height: 30px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #000000;
+	font-size: 24px;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #000000;
 }
 .page-title
 {
@@ -136,7 +136,7 @@ li.current a
 }
 
 .filters fieldset {
-    border: none;
+	border: none;
 }
 .filters legend
 {
@@ -164,13 +164,13 @@ li.current a
 }
 .filter-button
 {
-    width: 260px;
-    height: 50px;
-    background-color: #eeeeee;
-    font-size:16px;
-    font-weight: 500;
-    line-height: 18px;
-    color: black;
+	width: 260px;
+	height: 50px;
+	background-color: #eeeeee;
+	font-size:16px;
+	font-weight: 500;
+	line-height: 18px;
+	color: black;
 }
 .catalog-item .description
 {
@@ -197,11 +197,11 @@ li.current a
 .description h3
 {
 	text-transform: uppercase;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 30px;
-    text-align: center;
-    color: #000000;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 30px;
+	text-align: center;
+	color: #000000;
 }
 .description p
 {
@@ -222,11 +222,15 @@ li.current a
 .description .button:focus
 {
 	box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-    background-color: #d7373b;
+	background-color: #d7373b;
+}
+.main-footer
+{
+	background-color: white;
 }
 .footer-social ul
 {
-    list-style: none;
+	list-style: none;
 }
 .footer-button
 {
@@ -240,37 +244,31 @@ li.current a
 .footer-social a:focus
 {
 	box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-    background-color: #d7373b;
+	background-color: #d7373b;
 }
 
-.footer-social a:first-child
+.footer-social a
 {
-	background-image: url(img/vk-icon.svg) no-repeat;
+	background-image: url(img/vk-icon.svg) ,url(img/insta-icon.svg) ,url(img/fb-icon.svg) ;
+    background-repeat:no-repeat;
+    background-position: 0% center,50% center ,100% center;
 }
-.footer-social a:nth-child(2)
-{
-	background-image: url(img/fb-icon.svg) no-repeat;
-}
-.footer-social a:last-child
-{
-	background-image: url(img/insta-icon.svg) no-repeat;
-}
-.footer-offer
+.footer-offer 
 {
 	font-size: 16px;
 	
 	font-weight: bold;
-    line-height: 22px;
-    text-align:left;
-    color: #444444;
+	line-height: 22px;
+	text-align:left;
+	color: #444444;
 }
 .footer-offer b
 {
 	font-size: 36px;
 	
 	font-weight: bold;
-    line-height: 36px;
-    text-align:left;
+	line-height: 36px;
+	text-align:left;
 
 }
 .feedback form
