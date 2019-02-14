@@ -58,16 +58,19 @@ li.current a
 	height: 2px;
 	border-bottom: 2px solid #fb565a;
 }
-.specialization-list {
+.specialization-list 
+{
 	list-style: none;
 }
-.specialization-list .to-order{
+.specialization-list .to-order
+{
 	font-size:16px;
 	line-height: 18px ;
 	text-align:center;
 	vertical-align: middle;
 	text-transform: uppercase;
 	color: white;
+	background-color: white;
 }
 .specialization-list .to-order-site
 {
