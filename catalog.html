@@ -10,26 +10,31 @@
   <body>
     <header class="main-header">
   <nav class="main-navigation">
-    <a class="main-header-logo">
-      <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Nerds">
-    </a>
-    <ul class="site-navigation">
-      <li><a href="#">студия</a></li>
-      <li><a href="#">клиенты</a></li>
-      <li class="current"><a href="catalog.html">магазин</a></li>
-      <li><a href="#">контакты</a></li>
-    </ul>
-    <div class="user-navigation">
-      <a href="#">
+    <div class="container">
+       <a class="main-header-logo">
+         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Nerds">
+       </a>
+       <ul class="site-navigation">
+          <li class="current"><a href="#">студия</a></li>
+          <li><a href="#">клиенты</a></li>
+          <li><a href="catalog.html">магазин</a></li>
+          <li><a href="#">контакты</a></li>
+       </ul>
+       <div class="user-navigation">
+        <a href="#">
         корзина</a>
+       </div>
+    </div>
+    <div class="title">
+     <h1 class="page-title">
+      Магазин готовых шаблонов
+     </h1>
     </div>
    </nav>
 </header>
 <main class="container">
-  <h1 class="page-title">
-    Магазин готовых шаблонов
-  </h1>
-<section class="filters">
+<div class="catalog-column">
+ <section class="filters">
   <h2 class="visually-hidden">Фильтр</h2>
   <form class="filters" action="/filters" method="post">
    <fieldset>
@@ -75,9 +80,9 @@
             показать
    </button>
   </form>
-</section>
-<section class="catalog">
-  <h2 class="visually-hidden">Список шаблонов</h2>
+ </section>
+ <section class="catalog">
+   <h2 class="visually-hidden">Список шаблонов</h2>
   <ul class="catalog-list">
     <li class="catalog-item">
       <a href="#">
@@ -165,10 +170,10 @@
           <li class="pages-number"><a href="#">2</a></li>
           <li class="pages-number"><a href="#">3</a></li>
           <li class="pages-number"><a href="#"></a>Следующая</li>
-        </ul>
-</section>
+  </ul>
+ </section>
 
-
+</div>
 </main>
 
 <footer class="main-footer"> 
