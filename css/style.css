@@ -62,7 +62,6 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	width: 440px;
 	margin: 0;
-	
     padding: 0;
     list-style: none;
     
@@ -146,10 +145,20 @@ input[type="radio"].visually-hidden {
 {
 	color: rgba(0, 0, 0, 0.3);
 }
-.current 
+.current
 {
-	
-	border-bottom: 2px solid #fb565a;
+  position:relative;
+}
+.current::after
+{
+  content: "";
+  position: absolute;
+  right: 20px;
+  bottom: 80px;
+  left: 20px;
+  height: 2px;
+  background-color:#fb565a;
+}
 }
 
 .specialization-list 
