@@ -112,13 +112,14 @@ input[type="radio"].visually-hidden {
 .user-cart::before {
     content: "";
     position:absolute;
-    top: 90px;
-    left: -15px;
-    background-image: url("img/cart-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
     width: 15px;
     height: 15px;
+    top: 90px;
+    left: -15px;
+    background-image: url("../img/cart-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    
 }
 .main-navigation .title
 {
@@ -333,19 +334,21 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   width: 27px;
-  height: 23px;
+  height: 26px;
   left: -40px;
   top:0px;
-  background-image:url("img/checbox-off.svg");
+  background-image:url("../img/checbox-off.svg");
+  background-repeat:no-repeat;
 }
 .filter-input-checkbox:checked + label::before {
   content: "";
   position: absolute;
   width: 27px;
-  height: 23px;
+  height: 26px;
   left: -40px;
   top:0px;
-  background-image:url("img/checbox-on.svg");
+  background-image:url("../img/checbox-on.svg");
+  background-repeat:no-repeat;
 }
 .filter-input-radio + label::before {
   content: "";
@@ -354,7 +357,8 @@ input[type="radio"].visually-hidden {
   height:25px;
   left: -40px;
   top: -2px;
-  background-image: url('img/radio-off.svg');
+  background-image: url("../img/radio-off.svg");
+  background-repeat:no-repeat;
 }
 .filter-input-radio:checked + label::before {
   content: "";
@@ -363,7 +367,8 @@ input[type="radio"].visually-hidden {
   position: absolute;
   left: -40px;
   top: -2px;
-  background-image: url('img/radio-on.svg');
+  background-image: url("../img/radio-on.svg");
+  background-repeat:no-repeat;
 }
 
 
