@@ -337,7 +337,7 @@ input[type="radio"].visually-hidden {
   height: 26px;
   left: -40px;
   top:0px;
-  background-image:url("../img/checbox-off.svg");
+  background-image:url("../img/checkbox-off.svg");
   background-repeat:no-repeat;
 }
 .filter-input-checkbox:checked + label::before {
@@ -347,7 +347,7 @@ input[type="radio"].visually-hidden {
   height: 26px;
   left: -40px;
   top:0px;
-  background-image:url("../img/checbox-on.svg");
+  background-image:url("../img/checkbox-on.svg");
   background-repeat:no-repeat;
 }
 .filter-input-radio + label::before {
