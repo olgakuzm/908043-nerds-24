@@ -48,7 +48,7 @@ input[type="radio"].visually-hidden {
   flex-direction: row;
   flex-wrap:wrap;
   font-size: 16px;
- line-height:30px;
+ line-height:33px;
  color:black;
  text-transform: uppercase;
  background-color: #eeeeee;
@@ -113,7 +113,7 @@ input[type="radio"].visually-hidden {
 .user-cart
 {
   position: relative;
-  padding-left: 45px;
+  margin-left:20px;
 } 
 .user-cart::before {
   content: "";
@@ -171,15 +171,15 @@ input[type="radio"].visually-hidden {
 
 .slider {
   position: relative;
-  margin-left:140px;
-  margin-top:-70px;
+  margin-left:160px;
+  margin-top:-75px;
   background-color: #eeeeee;
 }
 
 .slider-controls {
   position: absolute;
-  left: 50%;
-  bottom: 104px;
+  left: 44%;
+  bottom: 96px;
   z-index: 100;
   
   width: 160px;
@@ -233,19 +233,19 @@ input[type="radio"].visually-hidden {
 
 .slider-item:nth-child(1) 
 {
-  background-image: url("../img/slide1.png");
+  background-image: url("../img/slide-1.png");
   background-repeat: no-repeat;
   background-position: 58% 18px;
 }
 
 .slider-item:nth-child(2) {
-  background-image: url("../img/slide2.png");
+  background-image: url("../img/slide-2.png");
   background-repeat: no-repeat;
   background-position: 64% 0;
 }
 
 .slider-item:nth-child(3) {
-  background-image: url("../img/slide3.png");
+  background-image: url("../img/slide-3.png");
   background-repeat: no-repeat;
   background-position: 58% 20px
 }
@@ -262,9 +262,9 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
-.slide-1:checked ~ .slider-controls .slider-controls-item--1::before,
-.slide-2:checked ~ .slider-controls .slider-controls-item--2::before,
-.slide-3:checked ~ .slider-controls .slider-controls-item--3::before {
+.slider-1:checked ~ .slider-controls .slider-controls-item--1::before,
+.slider-2:checked ~ .slider-controls .slider-controls-item--2::before,
+.slider-3:checked ~ .slider-controls .slider-controls-item--3::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -293,11 +293,14 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 38px;
 }
-
-.button {
+.button
+{
+  border-radius: 3px;
+}
+.button-learn-more {
   display: block;
   width: 240px;
-  padding: 13px 0;
+  padding: 15px 0;
   
   font-size: 16px;
   line-height: 18px;
@@ -307,16 +310,16 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   
   background-color: #fb565a;
-  border-radius: 3px;
+  
   border: none;
 }
 
-.button:hover,
-.button:focus {
+.button-learn-more:hover,
+.button-learn-more:focus {
   background-color: #e74246;
 }
 
-.button:active {
+.button-learn-more:active {
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
@@ -333,8 +336,40 @@ input[type="radio"].visually-hidden {
 }
 .specialization-item
 {
-  width: 310px;
-  
+  width: 305px;
+  text-align: left;
+  color:#283136;
+}
+.specialization-item:first-child
+{
+  margin-left:140px;
+}
+.specialization-item:last-child
+{
+  margin-right:194px;
+}
+.specialization-item p
+{
+  margin-top:-6px;
+  margin-bottom:29px;
+}
+.specialization-item p:first-letter
+{
+  text-transform: capitalize;
+}
+
+.specialization-item h3 {
+  margin: 22px 0px;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align:left;
+  font-weight: bold;
+  color: #000000;
+}
+.specialization-item img
+{
+  margin-top:6px;
 }
 .specialization-list .to-order
 {
@@ -389,37 +424,6 @@ input[type="radio"].visually-hidden {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #e5a722;
 }
-.specialization-item {
-  text-align: left;
-
-  color:#283136;
-}
-.specialization-item:first-child
-{
-  margin-left:140px;
-}
-.specialization-item:last-child
-{
-  margin-right:200px;
-}
-.specialization-item p
-{
-  margin-bottom:35px;
-}
-.specialization-item p:first-letter
-{
-  text-transform: capitalize;
-}
-
-.specialization-item h3 {
-  margin: 26px 0px;
-  font-size: 24px;
-  line-height: 30px;
-  text-transform: uppercase;
-  text-align:left;
-  font-weight: bold;
-  color: #000000;
-}
 .about-us
 {
   font-family:Roboto;
@@ -427,7 +431,7 @@ input[type="radio"].visually-hidden {
   color:black;
   font-size:16px;
   line-height:24px;
-  margin-top:122px;
+  margin-top:105px;
   margin-bottom:40px;
 }
 .about-us-words
@@ -441,21 +445,32 @@ input[type="radio"].visually-hidden {
   font-size:45px;
   line-height:45px;
   font-weight:500;
+  margin-bottom:33px;
 }
 .about-us-words h3
 {
-  margin-top:35px;
+  font-size:19px;
+  margin-top:38px;
   font-weight:bold;
 }
 .about-us-words p
 {
+  
+  margin-top:15px;
   color:#283136;
 }
 .list-of-development
 {
-  
+  display:flex;
+  flex-direction:column;
   list-style:none;
   position:relative;
+  margin-top:-11px;
+  margin-left:-3px;
+}
+.list-of-development p
+{
+  margin-bottom:10px;
 }
 .list-of-development li::before
 {
@@ -464,8 +479,8 @@ input[type="radio"].visually-hidden {
   height:2px;
   background-color:red;
   position:absolute;
-  left:0px;
-  margin-top:12px;
+  left:4px;
+  margin-top:26px;
 }
 .about-us-numbers
 {
