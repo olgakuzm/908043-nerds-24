@@ -55,6 +55,7 @@ input[type="radio"].visually-hidden {
 }
 .main-navigation .container
 {
+
   display: flex;
   align-items: center; 
   justify-content: space-between;
@@ -74,12 +75,9 @@ input[type="radio"].visually-hidden {
 {
   width: 140px;
   margin: 0;
-
   padding: 0;
   margin-right:96px;
-
   list-style: none; 
-  
 }
 
 .main-header-logo
@@ -172,8 +170,8 @@ input[type="radio"].visually-hidden {
 
 .slider-controls {
   position: absolute;
-  left: 41.5%;
-  bottom: 100px;
+  left: 596px;
+  bottom: 99px;
   z-index: 100;
   
   width: 160px;
@@ -342,6 +340,7 @@ input[type="radio"].visually-hidden {
 }
 .specialization-item p
 {
+  width:245px;
   margin-top:-2px;
   margin-bottom:29px;
 }
@@ -366,6 +365,7 @@ input[type="radio"].visually-hidden {
 .specialization-list .to-order
 {
   display:inline-block;
+  margin-top:4px;
   padding: 17px 41px;
   font-size:16px;
   line-height: 18px ;
@@ -550,15 +550,16 @@ input[type="radio"].visually-hidden {
 .contact-information
 {
   position:absolute;
-  display:block;
+  display:flex;
+  flex-wrap:wrap;
   width:250px;
-  top:50px;
+  top:54px;
   left:140px;
-  background-color:white;
-  padding-top:61px;
   padding-left:50px;
-  padding-right:30px;
-  padding-bottom:62px;
+  padding-right:20px;
+  padding-top:56px;
+  padding-bottom:54px;
+  background-color:white;
   font-family:Roboto;
   line-height:18px;
   color:#666666;
@@ -569,14 +570,19 @@ input[type="radio"].visually-hidden {
   font-weight:bold;
   color:black;
   text-transform:uppercase;
+  margin-bottom:14px;
+}
+.contact-information p:nth-of-type(2)
+{
+  margin-top:3px;
 }
 .button-write-us
 {
-  margin-top:50px;
   display:block;
   background-color:#fb565a;
   width:205px;
   padding:16px 8px;
+  margin-top:20px;
   text-align:center;
   color:white;
   font-weight:500;
@@ -825,66 +831,88 @@ input[type="radio"].visually-hidden {
   display:flex;
   width:980px;
   text-transform:uppercase;
-  margin-bottom:26px;
+  margin-bottom:37px;
 }
-.sort-by p
+.sort-by b
 {
+  margin-top:17px;
   font-size:18px;
-  line-height:18px;
   font-weight:bold;
-
+  line-height:18px;
 }
-.sort-by ul
+.filter-sort
 {
+  margin-top:12px;
   display:flex;
   list-style:none;
-  font-size:13px;
+  justify-content:space-between;
+}
+.filter-sort-item
+{
+  margin-right:26px;
+}
+.filter-sort-item label
+{
+  font-size:14px;
   line-height:18px;
-  
-}
-.sort-list
-{
-  margin-left:205px;
-  display:inline-block;
-}
-.sort-list li
-{
-
-  width:60px;
-  margin-left:22px;
-}
-.sort-list a
-{
-  vertical-align:middle;
-  color:black;
   opacity:0.3;
 }
-
-.sort-list li:last-child
+.filter-sort-words
 {
-  width:100px;
+  margin-left:224px;
+  margin-right:-20px;
 }
-.sort-controls .arrow
+.filter-sort-arrows label
 {
-  display:block;
   font-size:0px;
-  border: 5.5px solid transparent;
+}
+.list-input + label
+{
+  position:relative;
+}
+.list-input-down + label::before
+{
+  content:"";
+  position: absolute;
+  width:11px;
+  height:10px;
+  left: 0px;
+  top: -10px;
   opacity:0.3;
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat:no-repeat;
 }
-.sort-controls .arrow-down
+.list-input-up + label::before
 {
-  margin-top:2px;
-  border-top: 9px solid black;
+  content:"";
+  position: absolute;
+  width:11px;
+  height:10px;
+  left: 4px;
+  top: -10px;
+  opacity:0.3;
+  background-image: url("../img/icon-up-dir.svg");
+  background-repeat:no-repeat;
 }
-.sort-controls .arrow-up
+
+.list-input:hover + label,
+.list-input:hover + label::before
 {
-  margin-top:-20px;
-  margin-left:18px;
-  border-bottom: 9px solid black;
+  opacity:0.6;
+}
+.list-input:checked + label,
+.list-input:checked + label::before
+{
+  opacity:1;
+}
+.list-input:focus + label,
+.list-input:focus + label::before
+{
+  outline-color:blue;
 }
 .catalog
 {
-  margin-left:217px;
+  margin-left:215px;
   margin-top:-8px;
   width: 980px;
 }
@@ -897,8 +925,6 @@ input[type="radio"].visually-hidden {
   list-style: none;
   margin-bottom:50px;
 }
-
-
 .catalog-item
 {
   position:relative;
@@ -987,24 +1013,24 @@ input[type="radio"].visually-hidden {
   display:flex;
   padding: 0px;
   margin: 0px;
+  margin-top:-30px;
+  margin-bottom:-22px;
   list-style: none;
-
 }
 .pages-number
 {
   margin-right:14px;
 }
 .pages-number:last-child {
+  text-transform:uppercase;
   text-align:center;
-  width:260px;
+  width:255px;
   margin-right: 0;
 }
 .pages-number a {
   display: block;
-  padding: 10px 19px;
-  
+  padding: 12px 20px;
   color: black;
-
   background-color: #eeeeee;
 }
 .pages-number a:hover
@@ -1019,16 +1045,14 @@ input[type="radio"].visually-hidden {
 }
 .pages-number-current a
 {
-  padding:7px 16px;
+  padding:9px 17px;
   background-color: white;
   border: solid 3px #dbdbdb;
 }
 .main-footer .container
 {
   display: flex;
-
   margin-top:60px;
-  
 }
 .main-footer
 {
