@@ -11,7 +11,7 @@
   <header class="main-header">
     <nav class="main-navigation">
       <div class="container">
-       <a class="main-header-logo" href="index.html">
+       <a class="main-header-logo" href="">
          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Nerds">
        </a>
        <ul class="site-navigation">
@@ -32,9 +32,10 @@
   </div>
 </nav>
 </header>
-<main class="container">
+
+<main>
   <div class="catalog-column">
-   <section class="filters">
+   <section class="filters-column container">
     <h2 class="visually-hidden">Фильтр</h2>
     <form class="filters" action="/filters" method="post">
       <fieldset class="price">
@@ -69,7 +70,7 @@
     </fieldset>
     <fieldset class="features">
      <legend>особенности</legend>
-     <ul >
+     <ul class="features-list">
        <li class="filter-option">
         <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="silder" id="filter-slider"  tabindex="0" checked>
         <label for="filter-slider" >Слайдер</label>
@@ -97,7 +98,7 @@
 </button>
 </form>
 </section>
-<section class="catalog">
+<section class="catalog container">
   <div class="sort-by">
   <b>Сортировать:</b>
   <ul class="filter-sort filter-sort-words">
@@ -129,9 +130,7 @@
 <ul class="catalog-list">
   <li class="catalog-item">
     <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
-    <a href="#">
       <img src="img/img-sedona.png" alt="Шаблон сайта Sedona">
-    </a>
     <div class="description">
       <h3>Sedona
       </h3>
@@ -143,9 +142,7 @@
   </li>
   <li class="catalog-item">
     <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
-    <a href="#">
       <img src="img/img-pink.png" alt="Шаблон сайта Pink">
-    </a>
     <div class="description">
       <h3>Pink App
       </h3>
@@ -157,9 +154,7 @@
   </li>
   <li class="catalog-item">
    <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
-   <a href="#">
     <img src="img/img-barbershop.png" alt="Шаблон сайта Borodinski">
-  </a>
   <div class="description">
     <h3>Barbershop
     </h3>
@@ -173,9 +168,7 @@
 </li>
 <li class="catalog-item">
  <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
- <a href="#">
   <img src="img/img-mishka.png" alt="Шаблон сайта Mishka">
-</a>
 <div class="description">
   <h3>MISHKA
   </h3>
@@ -187,9 +180,7 @@
 </li>
 <li class="catalog-item">
  <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
- <a href="#">
   <img src="img/img-aplus.png" alt="Шаблон сайта A+">
-</a>
 <div class="description">
   <h3>A Plus
   </h3>
@@ -201,9 +192,7 @@
 </li>
 <li class="catalog-item">
  <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40"><path fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/></svg>
- <a href="#">
   <img src="img/img-sedona.png" alt="Шаблон сайта Кваст">
-</a>
 <div class="description">
   <h3>КВАСТ
   </h3>
@@ -215,7 +204,7 @@
 </li>                
 </ul>
 <ul class="pages-list">
-  <li class="pages-number pages-number-current"><a>1</a></li>
+  <li class="pages-number pages-number-current"><a href="#">1</a></li>
   <li class="pages-number"><a href="#">2</a></li>
   <li class="pages-number"><a href="#">3</a></li>
   <li class="pages-number"><a href="#">Следующая</a></li>

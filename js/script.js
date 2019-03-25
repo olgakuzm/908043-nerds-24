@@ -2,8 +2,7 @@
   var popup = document.querySelector(".feedback");
   var close = popup.querySelector(".feedback-close");
   var form = popup.querySelector("form");
-   var login = popup.querySelector("[name=user-name]");
-  var password = popup.querySelector("[name=email]");
+  var email = popup.querySelector("[name=email]");
   link.addEventListener("click", function (evt) {
      evt.preventDefault();
      popup.classList.add("feedback-show");
@@ -14,9 +13,9 @@
     popup.classList.remove("feedback-error");
   });
   form.addEventListener("submit", function (evt) {
-    if (!login.value || !password.value) {
+    if (!email.value) {
       evt.preventDefault();
-      popup.classList.remove("feeback-error");
+      popup.classList.remove("feedback-error");
       popup.offsetWidth = popup.offsetWidth;
       popup.classList.add("feedback-error");
     }
