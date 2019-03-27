@@ -8,7 +8,7 @@ body
   font-weight: normal;
   text-align:left;
   background-color: #ffffff;
-  overflow-x: hidden;
+  min-width:1250px;
 }
 a 
 {
@@ -37,10 +37,10 @@ input[type="radio"].visually-hidden
  width:1160px;
  margin: 0 auto;
  padding: 0 20px;
+ 
 }
 .main-header
 {
-
   width:100%;
   font-family:"Roboto", Arial, sans-serif;
   background-color: #eeeeee;
@@ -183,6 +183,8 @@ input[type="radio"].visually-hidden
 }
 .page-title
 {
+  width: 1160px;
+  margin: 0 auto;
   margin-top:0px;
   padding-top:60px;
   padding-bottom:105px;
@@ -362,7 +364,7 @@ input[type="radio"].visually-hidden
   margin-top:76px;
   padding:0px;
   list-style: none;
-  font-family:Roboto;
+  font-family:"Roboto", Arial, sans-serif;
 }
 .specialization-item
 {
@@ -657,7 +659,7 @@ input[type="radio"].visually-hidden
   left:20px;
   padding:53px 20px 49px 51px;
   background-color:white;
-  font-family:Roboto;
+  font-family:"Roboto", Arial, sans-serif;
   line-height:18px;
   color:#666666;
 }
@@ -977,7 +979,7 @@ input[type="radio"].visually-hidden
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
-  width:980px;
+  width:780px;
   text-transform:uppercase;
   margin-bottom:37px;
 }
@@ -1067,7 +1069,7 @@ input[type="radio"].visually-hidden
 {
   margin-left:130px;
   margin-top:-8px;
-  width: 800px;
+  width: 760px;
 }
 .catalog-list
 {
@@ -1533,7 +1535,7 @@ input[type="radio"].visually-hidden
 .form-field .button 
 {
   text-transform:uppercase;
-  font-family: Roboto;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 500;
   color:white;
