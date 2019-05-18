@@ -1,6 +1,6 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Камиль Латипов](https://up.htmlacademy.ru/htmlcss/24/user/908043).
+* Студент: [](https://up.htmlacademy.ru/htmlcss/24/user/908043).
 * Наставник: `Неизвестно`.
 
 ---
